@@ -1,0 +1,27 @@
+{
+  "name": "airranged/ping-package",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Airranged",
+      "email": "opensource@airranged.ca"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Airranged\\PingPackage\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Airranged\\PingPackage\\PingServiceProvider"
+      ],
+      "aliases": {
+        "Ping": "Airranged\\PingPackage\\Facades\\Ping"
+      }
+    }
+  }
+}
